@@ -29,7 +29,7 @@ RUN buildDeps='curl gnupg' HOME='/root' \
 
 
 RUN apk update && \
-    apk add  su-exec tzdata libpq postgresql-client postgresql postgresql-contrib && \
+    apk add su-exec tzdata libpq postgresql-client postgresql postgresql-contrib && \
     mkdir /docker-entrypoint-initdb.d && \
     rm -rf /var/cache/apk/*
 
